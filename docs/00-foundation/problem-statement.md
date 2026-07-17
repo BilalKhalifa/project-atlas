@@ -26,3 +26,13 @@ Most products become passive vaults instead of active security companions.
 Instead of building another password manager, we want to build a product that helps people understand, improve, and maintain their digital identity.
 
 Passwords are only the beginning.
+
+---
+
+## Key Insight
+
+Existing password managers successfully solve password storage.
+
+The next opportunity is not improving storage.
+
+The next opportunity is helping users understand and manage their digital identity through guidance, education, and thoughtful user experience.

@@ -35,3 +35,13 @@ Nothing exists only because it looks cool.
 ## 5. Guide, Don't Just Store
 
 The product should actively help users understand and improve their digital security instead of acting as passive storage.
+
+---
+
+## 6. Guide, Don't Alarm
+
+Security should never rely on fear.
+
+Whenever something goes wrong, the product should explain the situation clearly, provide actionable guidance, and help users recover with confidence.
+
+Our role is to reduce anxiety, not increase it.
