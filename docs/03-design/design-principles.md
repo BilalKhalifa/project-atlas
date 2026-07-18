@@ -123,3 +123,27 @@ Motion should make the product feel responsive without slowing users down.
 Collect the minimum data required.
 
 Users should always feel in control of their information.
+
+---
+
+## Search First
+
+Search is a primary navigation method, not an afterthought.
+
+Users should be able to instantly find:
+
+- Credentials
+
+- Notes
+
+- Cards
+
+- Settings
+
+- Actions
+
+- Security reports
+
+Keyboard shortcuts such as Ctrl/Cmd + K should provide quick access to search and common actions.
+
+The interface should support both mouse-first and keyboard-first workflows.
