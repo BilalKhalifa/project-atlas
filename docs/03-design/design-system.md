@@ -200,47 +200,51 @@ Wide
 
 ---
 
-# Icons
+# Icon System
 
-Primary Library
+## Primary Icons
 
+Library:
 Reicon
 
-Fallback
+Used for:
 
-Lucide
+- Navigation
+- Forms
+- Tables
+- Buttons
+- Status indicators
 
 ---
 
-### Principles
+## Animated Icons
 
-Icons support content.
+Library:
+ItsHover
 
-They never replace labels where clarity is important.
+Used only for interaction feedback.
 
-Icons should:
+Examples:
 
-- Use a consistent stroke width
-- Maintain optical balance
-- Remain recognizable at small sizes
-- Pair with text for navigation
-- Communicate meaning, not decoration
+- Copy
+- Sync
+- Lock
+- Unlock
+- Success
+- Delete
+- Search
 
-Avoid decorative icon usage.
+Animation should communicate state changes or user interaction.
 
-## Icon Philosophy
+Animations should:
 
-Icons are supporting elements.
+- Last under 300ms
+- Be interruptible
+- Never loop continuously
+- Never distract from content
 
-Text communicates.
+Motion is feedback, not decoration.
 
-Icons reinforce.
-
-Navigation icons should remain consistent across the application.
-
-Avoid icon-only interfaces except where universally understood (e.g., Search, Close, Back).
-
-Never use multiple icons for the same concept.
 ---
 
 # Motion Tokens
