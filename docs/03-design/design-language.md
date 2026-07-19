@@ -4,6 +4,30 @@ Version: 1.0
 
 ---
 
+## Atlas Design Laws
+
+Privacy is a right. Not a feature.
+
+Secure by default. Simple by design.
+
+Search first.
+
+Clarity over cleverness.
+
+Motion communicates.
+
+Animation is a reward, not a requirement.
+
+Trust is earned through transparency.
+
+Whitespace is a feature.
+
+Every click should have a purpose.
+
+Beautiful software is invisible software.
+
+---
+
 # Purpose
 
 Atlas should feel calm, trustworthy, and effortlessly fast.
@@ -384,3 +408,25 @@ When someone opens Atlas, they should think:
 "I know exactly what to do."
 
 Atlas should disappear into the background and let users focus on what matters.
+
+---
+
+# Motion Philosophy
+
+Animation exists to communicate.
+
+It should explain, confirm, and reward—not entertain.
+
+Atlas avoids decorative motion that competes with the user's task.
+
+Instead, animation highlights meaningful moments:
+
+- A password is copied.
+- The vault unlocks.
+- A sync completes.
+- A passkey is created.
+- Password health improves.
+
+Animation should never become visual noise.
+
+> Animation is a reward, not a requirement.
