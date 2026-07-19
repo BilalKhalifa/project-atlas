@@ -202,17 +202,45 @@ Wide
 
 # Icons
 
-Library:
+Primary Library
 
-Lucide Icons
+Reicon
 
-Guidelines:
+Fallback
 
-- Outline style
-- Consistent stroke
-- Simple geometry
-- Always paired with text when clarity matters
+Lucide
 
+---
+
+### Principles
+
+Icons support content.
+
+They never replace labels where clarity is important.
+
+Icons should:
+
+- Use a consistent stroke width
+- Maintain optical balance
+- Remain recognizable at small sizes
+- Pair with text for navigation
+- Communicate meaning, not decoration
+
+Avoid decorative icon usage.
+
+## Icon Philosophy
+
+Icons are supporting elements.
+
+Text communicates.
+
+Icons reinforce.
+
+Navigation icons should remain consistent across the application.
+
+Avoid icon-only interfaces except where universally understood (e.g., Search, Close, Back).
+
+Never use multiple icons for the same concept.
 ---
 
 # Motion Tokens
