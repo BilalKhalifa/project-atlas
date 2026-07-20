@@ -39,3 +39,29 @@ Copy Password
         ↓
 Done
 ```
+
+---
+
+# User Flows
+
+Version: 1.0
+
+---
+
+# Philosophy
+
+Atlas is designed around user journeys rather than individual screens.
+
+Each interaction should feel connected, predictable, and effortless.
+
+Users should never wonder:
+
+- What happens next?
+
+- Did it work?
+
+- Where did my action go?
+
+Every flow should reduce friction while increasing confidence.
+
+---
