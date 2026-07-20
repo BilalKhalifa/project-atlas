@@ -43,3 +43,67 @@
 - Skeuomorphic locks everywhere
 
 This becomes a north star whenever you're designing or prompting AI tools.
+
+```
+## Typography
+
+Raycast
+
+Apple
+
+Vercel
+
+---
+
+## Motion
+
+Arc
+
+Linear
+
+Framer Motion
+
+---
+
+## Authentication
+
+Supabase
+
+Clerk
+
+---
+
+## Search
+
+Raycast
+
+Spotlight
+
+Linear
+
+---
+
+## Dashboard
+
+Vercel
+
+Stripe
+
+GitHub
+
+---
+
+## What We Avoid
+
+Cyberpunk
+
+Heavy Glass
+
+Clutter
+
+Fear-based Security
+
+Too Many Colors
+
+Long Animations
+```

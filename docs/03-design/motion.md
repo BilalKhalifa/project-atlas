@@ -81,3 +81,73 @@ Every animation should answer:
 - Where did it go?
 
 - Was it successful?
+
+---
+
+---
+
+```
+Motion Philosophy
+
+↓
+
+Motion Hierarchy
+
+↓
+
+Motion Tokens
+
+↓
+
+Transitions
+
+↓
+
+Micro Interactions
+
+↓
+
+Accessibility
+
+↓
+
+Examples
+```
+
+Examples:
+
+```
+Hover
+
+↓
+
+8px magnetic attraction
+
+↓
+
+120ms
+
+↓
+
+Ease Out
+```
+
+```
+Open Dialog
+
+↓
+
+Scale 98%
+
+↓
+
+Opacity
+
+↓
+
+Blur Background
+
+↓
+
+220ms
+```
