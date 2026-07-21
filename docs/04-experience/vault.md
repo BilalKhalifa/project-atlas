@@ -52,7 +52,7 @@ Atlas should help users manage everything required to access their digital life 
 
 The vault contains multiple item types.
 
-\`
+`
 
 Vault
 
@@ -82,7 +82,7 @@ Vault
 
 └── Trash
 
-\`
+`
 
 Future item types may be added without changing the overall navigation model.
 
