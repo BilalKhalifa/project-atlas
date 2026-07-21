@@ -64,8 +64,7 @@ Primary navigation is always available through the sidebar.
 
 It provides access to the major areas of the application.
 
-\`
-
+```
 Atlas
 
 │
@@ -81,8 +80,7 @@ Atlas
 ├── Settings
 
 └── Account
-
-\`
+```
 
 Primary navigation should remain stable throughout the application.
 
@@ -98,37 +96,23 @@ Example:
 
 Vault
 
-\`
-
+```
 Vault
 
 │
-
 ├── All Items
-
 ├── Logins
-
 ├── Passkeys
-
 ├── Secure Notes
-
 ├── Payment Cards
-
 ├── Identities
-
 ├── API Keys
-
 ├── SSH Keys
-
 ├── Software Licenses
-
 ├── Wi-Fi Passwords
-
 ├── Archive
-
 └── Trash
-
-\`
+```
 
 Users should always understand which category they are currently viewing.
 
