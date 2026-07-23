@@ -1,0 +1,159 @@
+{
+  "name": "Atlas Design System",
+  "version": "1.0.0",
+  "description": "A beautiful, production-ready UI/UX design system",
+  "colors": {
+    "primary": {
+      "base": "#004194",
+      "light": "#4DA6FF",
+      "dark": "#003D8A",
+      "contrast": "#FFFFFF",
+      "focus-ring": "rgba(0, 65, 148, 0.4)"
+    },
+    "secondary": {
+      "base": "#2E9196",
+      "light": "#4DDDEB",
+      "dark": "#1A686B",
+      "contrast": "#FFFFFF"
+    },
+    "success": {
+      "base": "#2D9A4F",
+      "light": "#6ED97F",
+      "dark": "#1D6B33",
+      "contrast": "#FFFFFF"
+    },
+    "warning": {
+      "base": "#E38E2E",
+      "light": "#F5C76B",
+      "dark": "#9A5A1A",
+      "contrast": "#FFFFFF"
+    },
+    "error": {
+      "base": "#9A2A37",
+      "light": "#FF6B6B",
+      "dark": "#6B1A24",
+      "contrast": "#FFFFFF"
+    },
+    "background": {
+      "base": "#FFFFFF",
+      "dark": "#1A1A1A"
+    },
+    "surface": {
+      "base": "#F8F9FA",
+      "dark": "#252525"
+    },
+    "text": {
+      "primary": "#212529",
+      "secondary": "#6C757D",
+      "disabled": "#ADB5BD",
+      "inverse": "#FFFFFF"
+    },
+    "border": {
+      "base": "#E9ECEF",
+      "dark": "#383838"
+    }
+  },
+  "typography": {
+    "font-families": {
+      "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "code": "SF Mono, Monaco, Consolas, 'Courier New', monospace"
+    },
+    "scale": {
+      "display": {
+        "font-size": "48px",
+        "font-weight": "700",
+        "line-height": "1.1",
+        "letter-spacing": "-0.02em"
+      },
+      "h1": {
+        "font-size": "32px",
+        "font-weight": "600",
+        "line-height": "1.2",
+        "letter-spacing": "-0.01em"
+      },
+      "h2": {
+        "font-size": "24px",
+        "font-weight": "600",
+        "line-height": "1.3",
+        "letter-spacing": "-0.01em"
+      },
+      "h3": {
+        "font-size": "20px",
+        "font-weight": "600",
+        "line-height": "1.4",
+        "letter-spacing": "-0.01em"
+      },
+      "body-large": {
+        "font-size": "18px",
+        "font-weight": "500",
+        "line-height": "1.5"
+      },
+      "body": {
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "1.5"
+      },
+      "caption": {
+        "font-size": "12px",
+        "font-weight": "500",
+        "line-height": "1.4",
+        "letter-spacing": "0.02em"
+      }
+    }
+  },
+  "spacing": {
+    "scale": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "xxl": "48px"
+    },
+    "components": {
+      "button-padding": "8px 16px",
+      "card-padding": "24px",
+      "input-padding": "8px 12px",
+      "section-gap": "32px"
+    }
+  },
+  "shadows": {
+    "sm": "0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)",
+    "base": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "md": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    "lg": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    "xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+  },
+  "borders": {
+    "radius": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "12px",
+      "lg": "16px",
+      "full": "9999px"
+    },
+    "width": {
+      "base": "1px",
+      "thick": "2px"
+    }
+  },
+  "transitions": {
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "decelerate": "cubic-bezier(0, 0, 0.2, 1)",
+      "accelerate": "cubic-bezier(0.4, 0, 1, 1)"
+    },
+    "duration": {
+      "fast": "150ms",
+      "normal": "300ms",
+      "slow": "500ms"
+    }
+  },
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "xxl": "1536px"
+  }
+}
