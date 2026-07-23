@@ -1,5 +1,11 @@
 # Atlas Documentation
 
+## Start Here
+
+- [Shared Project Context](PROJECT_CONTEXT.md) — current cross-agent project status, active decisions, and maintenance protocol.
+- [Agent Instructions](../AGENTS.md) — required read/update workflow for Codex, Claude Desktop, and Antigravity.
+- [Accepted Architecture ADR](decisions/0005-architecture-stack.md) — official technical stack.
+
 ## Foundation
 
 - Vision

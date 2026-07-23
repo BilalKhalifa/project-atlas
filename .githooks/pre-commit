@@ -1,0 +1,11 @@
+#!/bin/sh
+# Keep the shared project context current whenever meaningful work is committed.
+
+if command -v pwsh >/dev/null 2>&1; then
+  pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/verify-project-context.ps1
+elif command -v powershell.exe >/dev/null 2>&1; then
+  powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/verify-project-context.ps1
+else
+  echo "Project context check requires PowerShell. Run scripts/verify-project-context.ps1 before committing."
+  exit 1
+fi

@@ -1,21 +1,16 @@
-You are working on Atlas.
+# Atlas — Start Here
 
-Before writing code:
+Before planning, designing, or writing code, read these documents in order:
 
-Read
+1. [Shared Project Context](../PROJECT_CONTEXT.md)
+2. [Repository Agent Instructions](../../AGENTS.md)
+3. The applicable accepted ADR in `../decisions/`
+4. The relevant detailed product, design, and experience specification
 
-1 . [PROJECT.md](http://PROJECT.md)
+`PROJECT_CONTEXT.md` is the current shared contract for Codex, Claude Desktop, and Antigravity. The older files in this directory are useful background, but they may contain superseded draft guidance.
 
-2 . [STACK.md](http://STACK.md)
+After every meaningful change, refresh the shared context before committing:
 
-3 . [ARCHITECTURE.md](http://ARCHITECTURE.md)
-
-4 . CODING \_[STANDARDS.md](http://STANDARDS.md)
-
-5 . UI \_[RULES.md](http://RULES.md)
-
-Documentation inside /docs is the source of truth.
-
-Never contradict the documentation.
-
-If documentation is missing, ask before implementing.
+```powershell
+.\scripts\update-project-context.ps1 -Summary "Describe the completed change and any decision it made."
+```

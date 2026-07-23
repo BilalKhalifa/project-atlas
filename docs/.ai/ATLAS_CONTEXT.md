@@ -1,5 +1,7 @@
 # Atlas AI Context
 
+> **Superseded as the active agent brief.** Start with [PROJECT_CONTEXT.md](../PROJECT_CONTEXT.md) and [AGENTS.md](../../AGENTS.md). This file is retained as historical background and may contain older draft guidance that conflicts with the active project context.
+
 Version: 1.0
 
 This document provides the essential context required for an AI coding assistant to work effectively on Atlas.
