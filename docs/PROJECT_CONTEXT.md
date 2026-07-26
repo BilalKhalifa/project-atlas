@@ -1,7 +1,7 @@
 # Atlas Project Context
 
 <!-- CONTEXT_METADATA_START -->
-- **Last updated:** 2026-07-23 22:28:43 IST
+- **Last updated:** 2026-07-26 23:57:50 IST
 - **Update owner:** Codex
 - **Context status:** Active and canonical
 <!-- CONTEXT_METADATA_END -->
@@ -35,6 +35,7 @@ Atlas is **authenticated software**, not a SaaS marketing site. Users should arr
 ## Current project status
 
 - The repository currently contains product, research, design, experience, and ADR documentation plus empty `frontend/` and `backend/` directories; an application scaffold has not yet been established.
+- Atlas has entered the **Design Research** phase. The research collection in `docs/03-design/research/` records observations and inspiration only; it does not establish design decisions.
 - The `design/` directory is currently untracked. Treat it as user-owned input, not canonical product documentation, until it is reviewed and deliberately added to version control.
 - Documentation consolidation is in progress. This context resolves the active desktop-first, Geist, and restrained-glass direction. Existing drafts may still contain older, conflicting guidance.
 - Open decisions before implementation: precise MVP item-type scope, folders versus tags, MFA/passkey scope, and the security model described above.
@@ -62,19 +63,13 @@ The Git pre-commit hook enforces step 4 for meaningful staged changes. It cannot
 ## Latest update
 
 <!-- CONTEXT_LATEST_UPDATE_START -->
-- **2026-07-23 22:28:43 IST â€” Codex:** Created the shared cross-agent context, agent entry points, Antigravity rule, and verified commit-time context check.
+- **2026-07-26 23:57:50 IST â€” Codex:** Entered the Design Research phase and added research-only documentation templates for collecting observations and inspiration.
 <!-- CONTEXT_LATEST_UPDATE_END -->
 
 ## Working-tree snapshot
 
 <!-- CONTEXT_FILES_START -->
-- `docs/.ai/ATLAS_CONTEXT.md`
-- `docs/.ai/START_HERE.md`
-- `docs/README.md`
-- `.agents/`
-- `.githooks/`
-- `AGENTS.md`
-- `CLAUDE.md`
 - `docs/PROJECT_CONTEXT.md`
-- `scripts/`
+- `design.zip`
+- `docs/03-design/research/`
 <!-- CONTEXT_FILES_END -->
