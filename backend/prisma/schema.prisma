@@ -1,3 +1,12 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
 model User {
   id          String  @id @default(cuid())
   clerkUserId String  @unique
@@ -7,30 +16,32 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
+  setting Settings?
+
   vaults Vault[]
 }
 
 model Vault {
   id String @id @default(cuid())
 
-  userID String
+  userId String
 
   name        String
   description String?
   icon        String?
 
-  folder Folder[]
-  secret Secret[]
+  folders Folder[]
+  secrets Secret[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  user User @relation(fields: [userID], references: [id])
+  user User @relation(fields: [userId], references: [id])
 
-  @@unique([userID, name])
+  @@unique([userId, name])
 }
 
-enum SecretType{
+enum SecretType {
   PASSWORD
   NOTE
   CARD
@@ -43,15 +54,15 @@ enum SecretType{
   CUSTOM
 }
 
-model Secret{
+model Secret {
   id String @id @default(cuid())
 
-  vaultId String
+  vaultId  String
   folderId String?
 
-  title String
+  title   String
   website String?
-  type SecretType
+  type    SecretType
 
   icon String?
 
@@ -65,11 +76,11 @@ model Secret{
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  vault Vault @relation(fields: [vaultId], references: [id])
+  vault  Vault   @relation(fields: [vaultId], references: [id])
   folder Folder? @relation(fields: [folderId], references: [id])
 }
 
-model Folder{
+model Folder {
   id String @id @default(cuid())
 
   vaultId String
@@ -82,7 +93,27 @@ model Folder{
 
   vault Vault @relation(fields: [vaultId], references: [id])
 
-  secret Secret[]
+  secrets Secret[]
 
   @@unique([vaultId, name])
+}
+
+enum Theme {
+  DARK
+}
+
+model Settings {
+  id String @id @default(cuid())
+
+  userId String @unique
+
+  defaultVaultId String?
+
+  theme    Theme   @default(DARK)
+  timezone String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id])
 }
