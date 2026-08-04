@@ -19,10 +19,70 @@ model Vault {
   description String?
   icon        String?
 
+  folder Folder[]
+  secret Secret[]
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   user User @relation(fields: [userID], references: [id])
 
   @@unique([userID, name])
+}
+
+enum SecretType{
+  PASSWORD
+  NOTE
+  CARD
+  IDENTITY
+  API_KEY
+  SSH_KEY
+  DATABASE
+  WIFI
+  LICENSE
+  CUSTOM
+}
+
+model Secret{
+  id String @id @default(cuid())
+
+  vaultId String
+  folderId String?
+
+  title String
+  website String?
+  type SecretType
+
+  icon String?
+
+  favorite Boolean @default(false)
+  archived Boolean @default(false)
+
+  encryptedData String
+
+  lastUsedAt DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  vault Vault @relation(fields: [vaultId], references: [id])
+  folder Folder? @relation(fields: [folderId], references: [id])
+}
+
+model Folder{
+  id String @id @default(cuid())
+
+  vaultId String
+
+  name String
+  icon String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  vault Vault @relation(fields: [vaultId], references: [id])
+
+  secret Secret[]
+
+  @@unique([vaultId, name])
 }
