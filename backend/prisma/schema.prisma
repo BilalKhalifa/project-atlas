@@ -1,4 +1,3 @@
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,37 +7,71 @@ datasource db {
 }
 
 model User {
-  id          String  @id @default(cuid())
-  clerkUserId String  @unique
-  email       String? @unique
+  id          String    @id @default(cuid())
+  clerkUserId String    @unique
+  email       String?   @unique
   displayName String?
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  setting Settings?
-
-  vaults Vault[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  setting     Settings?
+  vaults      Vault[]
 }
 
 model Vault {
-  id String @id @default(cuid())
-
-  userId String
-
+  id          String   @id @default(cuid())
+  userId      String
   name        String
   description String?
   icon        String?
-
-  folders Folder[]
-  secrets Secret[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  user User @relation(fields: [userId], references: [id])
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  folders     Folder[]
+  secrets     Secret[]
+  user        User     @relation(fields: [userId], references: [id])
 
   @@unique([userId, name])
+}
+
+model Secret {
+  id            String     @id @default(cuid())
+  vaultId       String
+  folderId      String?
+  title         String
+  website       String?
+  type          SecretType
+  icon          String?
+  favorite      Boolean    @default(false)
+  archived      Boolean    @default(false)
+  encryptedData String
+  lastUsedAt    DateTime?
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  folder        Folder?    @relation(fields: [folderId], references: [id])
+  vault         Vault      @relation(fields: [vaultId], references: [id])
+}
+
+model Folder {
+  id        String   @id @default(cuid())
+  vaultId   String
+  name      String
+  icon      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  vault     Vault    @relation(fields: [vaultId], references: [id])
+  secrets   Secret[]
+
+  @@unique([vaultId, name])
+}
+
+model Settings {
+  id             String   @id @default(cuid())
+  userId         String   @unique
+  defaultVaultId String?
+  theme          Theme    @default(DARK)
+  timezone       String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  user           User     @relation(fields: [userId], references: [id])
 }
 
 enum SecretType {
@@ -54,66 +87,6 @@ enum SecretType {
   CUSTOM
 }
 
-model Secret {
-  id String @id @default(cuid())
-
-  vaultId  String
-  folderId String?
-
-  title   String
-  website String?
-  type    SecretType
-
-  icon String?
-
-  favorite Boolean @default(false)
-  archived Boolean @default(false)
-
-  encryptedData String
-
-  lastUsedAt DateTime?
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  vault  Vault   @relation(fields: [vaultId], references: [id])
-  folder Folder? @relation(fields: [folderId], references: [id])
-}
-
-model Folder {
-  id String @id @default(cuid())
-
-  vaultId String
-
-  name String
-  icon String?
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  vault Vault @relation(fields: [vaultId], references: [id])
-
-  secrets Secret[]
-
-  @@unique([vaultId, name])
-}
-
 enum Theme {
   DARK
-}
-
-model Settings {
-  id String @id @default(cuid())
-
-  userId String @unique
-
-  defaultVaultId String?
-
-  theme    Theme   @default(DARK)
-  timezone String?
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  user User @relation(fields: [userId], references: [id])
 }
